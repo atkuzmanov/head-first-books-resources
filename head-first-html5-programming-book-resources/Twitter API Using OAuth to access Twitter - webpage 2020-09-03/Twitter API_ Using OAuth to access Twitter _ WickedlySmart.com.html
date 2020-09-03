@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://www.wickedlysmart.com/twitternews-oauth/ -->
+<html lang="en-US" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.wickedlysmart.com/xmlrpc.php">
+
+	<script type="text/javascript" async="" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/analytics.js"></script><script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<script>var et_site_url='https://www.wickedlysmart.com';var et_post_id='1969';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script><title>Twitter API: Using OAuth to access Twitter | WickedlySmart.com</title>
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.wickedlysmart.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.4"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		<meta content="Divi v.3.29.3" name="generator"><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="vscf_style-css" href="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/vscf-style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="divi-style-css" href="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="Divi-Blog-Extras-styles-css" href="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/style.min(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="et-builder-googlefonts-cached-css" href="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/dashicons.min.css" type="text/css" media="all">
+<script>if (document.location.protocol != "https:") {document.location = document.URL.replace(/^http:/i, "https:");}</script><script type="text/javascript" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/jquery.js"></script>
+<script type="text/javascript" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/jquery-migrate.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ajax_object = {"ajaxurl":"https:\/\/www.wickedlysmart.com\/wp-admin\/admin-ajax.php","ajax_nonce":"7281c36d1e"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/frontend-bundle.min.js"></script>
+<script type="text/javascript" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/widget.min.js"></script>
+<link rel="https://api.w.org/" href="https://www.wickedlysmart.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.wickedlysmart.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.wickedlysmart.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Learning JavaScript Functions, Part 3" href="https://www.wickedlysmart.com/learning-javascript-functions-part-3/">
+<link rel="next" title="A Teaser from Head First JavaScript Programming" href="https://www.wickedlysmart.com/a-teaser-from-head-first-javascript-programming/">
+<meta name="generator" content="WordPress 5.2.4">
+<link rel="canonical" href="https://www.wickedlysmart.com/twitternews-oauth/">
+<link rel="shortlink" href="https://www.wickedlysmart.com/?p=1969">
+<link rel="alternate" type="application/json+oembed" href="https://www.wickedlysmart.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wickedlysmart.com%2Ftwitternews-oauth%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.wickedlysmart.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.wickedlysmart.com%2Ftwitternews-oauth%2F&amp;format=xml">
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw_url){window.open(pinw_url, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+//-->
+</script>
+<style type="text/css" id="et-bloom-custom-css">
+					.et_bloom .et_bloom_optin_6 .et_bloom_form_content { background-color: #ededed !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_container .et_bloom_form_header { background-color: #62519b !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_content button { background-color: #62519b !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_content .et_bloom_fields i { color: #62519b !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_content .et_bloom_custom_field_radio i:before { background: #62519b !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_content button { background-color: #62519b !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_container h2, .et_bloom .et_bloom_optin_6 .et_bloom_form_container h2 span, .et_bloom .et_bloom_optin_6 .et_bloom_form_container h2 strong { font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif; }.et_bloom .et_bloom_optin_6 .et_bloom_form_container p, .et_bloom .et_bloom_optin_6 .et_bloom_form_container p span, .et_bloom .et_bloom_optin_6 .et_bloom_form_container p strong, .et_bloom .et_bloom_optin_6 .et_bloom_form_container form input, .et_bloom .et_bloom_optin_6 .et_bloom_form_container form button span { font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif; } 
+				</style><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"><link rel="icon" href="https://www.wickedlysmart.com/wp-content/uploads/2018/01/cropped-cropped-Wickedly-fav512fire-1-32x32.jpg" sizes="32x32">
+<link rel="icon" href="https://www.wickedlysmart.com/wp-content/uploads/2018/01/cropped-cropped-Wickedly-fav512fire-1-192x192.jpg" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="https://www.wickedlysmart.com/wp-content/uploads/2018/01/cropped-cropped-Wickedly-fav512fire-1-180x180.jpg">
+<meta name="msapplication-TileImage" content="https://www.wickedlysmart.com/wp-content/uploads/2018/01/cropped-cropped-Wickedly-fav512fire-1-270x270.jpg">
+<style type="text/css">
+#main-header {
+	background-color: #000000!important; 
+}
+
+</style>
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/et-divi-customizer-global-15987541714706.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)"><style>[data-columns]::before{visibility:hidden;position:absolute;font-size:1px;}</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><style id="et_fix_page_container_position">#page-container{ padding-top: 0 !important;}</style></head>
+<body data-rsssl="1" class="post-template-default single single-post postid-1969 single-format-standard et_bloom et_pb_button_helper_class et_transparent_nav et_fullwidth_nav et_fullwidth_secondary_nav et_non_fixed_nav et_show_nav et_cover_background et_pb_gutter osx et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_fullscreen et_header_style_left et_full_width_page et_divi_theme et-db et_minified_js et_minified_css chrome">
+	<div id="page-container">
+
+	
+					<div class="et_slide_in_menu_container" style="padding-top: 119px; right: -1265px;">
+							<span class="mobile_menu_bar et_toggle_fullscreen_menu"></span>
+			
+								<div class="et_slide_menu_top">
+
+											<div class="et_pb_top_menu_inner">
+																			<form role="search" method="get" class="et-search-form" action="https://www.wickedlysmart.com/">
+					<input type="search" class="et-search-field" placeholder="Search …" value="" name="s" title="Search for:">					<button type="submit" id="searchsubmit_header"></button>
+				</form>
+			
+															</div> <!-- .et_pb_top_menu_inner -->
+				
+				</div> <!-- .et_slide_menu_top -->
+			
+			<div class="et_pb_fullscreen_nav_container">
+				
+				<ul id="mobile_menu_slide" class="et_mobile_menu">
+
+				<li id="menu-item-41331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-41331 et_first_mobile_item"><a href="https://www.wickedlysmart.com/">Home</a></li>
+<li id="menu-item-41027" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41027"><a href="https://www.wickedlysmart.com/books/">Books</a></li>
+<li id="menu-item-41031" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41031"><a href="https://www.wickedlysmart.com/training/">Training</a></li>
+<li id="menu-item-41032" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41032"><a href="https://www.wickedlysmart.com/agency/">Agency</a></li>
+<li id="menu-item-41039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41039"><a href="https://www.wickedlysmart.com/blog/">Blog/Podcast</a></li>
+<li id="menu-item-41045" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41045"><a href="http://members.wickedlysmart.com/">Member Site</a></li>
+<li id="menu-item-41421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41421"><a href="https://www.wickedlysmart.com/contact/">Contact Us</a></li>
+
+				</ul>
+			</div>
+		</div>
+		
+			<header id="main-header" data-height-onload="80" data-height-loaded="true" data-fixed-height-onload="80">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="https://www.wickedlysmart.com/">
+						<img src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/wswhitelogo-1.png" alt="WickedlySmart.com" id="logo" data-height-percentage="35" data-actual-width="300" data-actual-height="58">
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40" style="padding-left: 175px;">
+					
+					
+											<span class="mobile_menu_bar et_pb_header_toggle et_toggle_fullscreen_menu"></span>
+					
+					
+									</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+			<div class="et_search_outer">
+				<div class="container et_search_form_container">
+					<form role="search" method="get" class="et-search-form" action="https://www.wickedlysmart.com/">
+					<input type="search" class="et-search-field" placeholder="Search …" value="" name="s" title="Search for:">					</form>
+					<span class="et_close_search_field"></span>
+				</div>
+			</div>
+		</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container" style="padding-top: 138px;">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-1969" class="et_pb_post post-1969 post type-post status-publish format-standard has-post-thumbnail hentry category-beginner category-blog category-javascript tag-oauth tag-php tag-twitter">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Twitter API: Using OAuth to access Twitter</h1>
+
+						<p class="post-meta"> by <span class="author vcard"><a href="https://www.wickedlysmart.com/author/beth/" title="Posts by Elisabeth Robson" rel="author">Elisabeth Robson</a></span> | <span class="published">Feb 9, 2013</span> | <a href="https://www.wickedlysmart.com/category/beginner/" rel="category tag">Beginner's Mind</a>, <a href="https://www.wickedlysmart.com/category/blog/" rel="category tag">blog</a>, <a href="https://www.wickedlysmart.com/category/javascript/" rel="category tag">JavaScript</a> | <span class="comments-number"><a href="https://www.wickedlysmart.com/twitternews-oauth/#respond">8 comments</a></span></p><img src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/TwitterKey_16_9-1024x576.jpg" alt="Twitter API: Using OAuth to access Twitter" class="" width="1080" height="675">
+												</div> <!-- .et_post_meta_wrapper -->
+				
+					<div class="entry-content">
+					<p>In a <a href="https://www.wickedlysmart.com/twitternews/">previous post</a>, I mentioned that Twitter is changing their <a href="https://dev.twitter.com/docs/api/1.1">API</a> so that all requests to the API will now require authentication. Unfortunately, what this means is that you can no longer use JSONP to request timeline and search data from Twitter (which we showed you how to do in Chapter 7 of <a href="http://www.amazon.com/exec/obidos/ASIN/1449390544/elisabethrobs-20">Head First HTML5 Programming</a>). Instead, you will need to use a <em>proxy</em>: a piece of software that sits between the JavaScript code in your web page, and the Twitter API, and creates an authenticated request to Twitter so you can get the data you want.</p>
+<p>For beginners, this probably sounds fairly daunting! But it’s actually not as bad as it sounds, because there are a number of <a href="https://dev.twitter.com/docs/twitter-libraries">free libraries</a> you can use to build your proxy. I’ve taken a look at a few of these, and found one, <a href="https://github.com/themattharris/tmhOAuth">tmhOAuth</a>, that is easy to use, and is built with PHP, which you may have on your computer already.</p>
+<p>Let’s build a small web application that you can use to search for a word on Twitter and get the tweets back in JSON format. Here are the steps we’re going to follow to create this app:</p>
+<ol>
+<li>Get a web server and PHP running on your computer</li>
+<li>Create a Twitter application on Twitter that you can use to connect</li>
+<li>Download and install the tmhOAuth PHP Library</li>
+<li>Write a PHP proxy application to connect to Twitter</li>
+<li>Create an HTML page with JavaScript code to connect to the proxy, retrieve the tweets, and display them in the web page</li>
+</ol>
+<h2>Get a web server and PHP running</h2>
+<p>To get started, you’ll need to make sure you’re running a web server on your computer (we describe how to do this on page 231 of <a href="http://www.amazon.com/exec/obidos/ASIN/1449390544/elisabethrobs-20">Head First HTML5 Programming</a>) and also that it’s running PHP. The easiest way to verify if you’re running PHP is to create a small file, <code>index.php</code> containing the following code:</p>
+<pre>&lt;?php phpinfo(); ?&gt;
+</pre>
+<p>Save this in a directory where your web server can see it (for instance, if you’re on a mac, that will be somewhere in your <code>~/Sites/</code> directory), and then go to the path to load the file. So, if you save <code>index.php</code> in <code>~/Sites/Twitter/</code> you’ll go to <code>http://localhost/~YOURUSERNAME/Twitter/index.php</code> to test. If you see output that looks like this at the top of the page:</p>
+<p><a href="https://www.wickedlysmart.com/wp-content/uploads/2015/06/php.jpg"><img class="alignnone size-medium wp-image-11713" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/php-300x41.jpg" alt="php" width="300" height="41"></a></p>
+<p>then you’ve got PHP running! Note that the version of PHP you are running might be different but as long as it’s 5 or greater you’re fine. If you’re on a Mac, chances are you are already running a web server with PHP and you won’t have to do anything. If you’re on Windows, you might have to install PHP and get it running; check out <a href="http://php.net/manual/en/install.windows.php">these instructions</a> for more information on how to do that (note that you’ll need to make sure you have a web server running first, probably Apache or IIS). If you’re running Windows 7, check out <a href="http://simonguest.com/2009/03/09/using-windows-7-to-host-php-applications-in-5-easy-steps/">this article</a> which describes how to get PHP up and running in 5 steps.</p>
+<p>Once you get PHP running, you’ll need to download <a href="https://github.com/themattharris/tmhOAuth">tmhOAuth</a> (click the ZIP button on the github project page). Save the zip in a folder where your web server can see it and where you’ll be creating this web application (again, if you’re on a Mac, this will probably be somewhere in the <code>~/Sites/</code> folder). Unzip the folder (if it isn’t done automatically for you), and you should have a folder named <code>tmhOAuth-master</code>.</p>
+<h2>Create a Twitter application</h2>
+<p>The next step is to create a Twitter application on Twitter. Go to <code>http://dev.twitter.com</code> and login with your Twitter account. Once you’ve logged in, go to your user account (your user name in the top right corner) and click on “My Applications”. You can create a new application by clicking on “Create a new application”. Give it a name (which will need to be unique among all Twitter applications, so you might want to use your initials in the name), a description, and a website. This website can be a temporary placeholder for now; it doesn’t have to really exist. If you have a web site up and running, you can go ahead and create a folder there to use as the temporary URL. If you’re planning on running this app on your web site at some point, you can use the eventual URL you’ll use for the app.</p>
+<p>That’s all you need! Agree to the rules, and click “Create your Twitter application”. (At some point, it’s a good idea to read through all the rules and make sure you really agree, of course).</p>
+<p>Once you’ve created an application, you’ll need to get your consumer and user secret tokens for the application. <strong>Do NOT share these with anyone!</strong> These are private and need to be protected (if someone else gets a hold of them, they can use them to hack your Twitter account, and violate the Twitter rules, which might get you kicked off Twitter, so keep them safe!!).</p>
+<p>To get these, click on the “Details” tab of your application and look for these items: Consumer key, Consumer secret, Access token, Access token secret. Create a new file in the same directory where you saved the tmhOAuth folder, and add:</p>
+<pre>&lt;?php
+$consumer_key = 'YOUR CONSUMER KEY';
+$consumer_secret = 'YOUR CONSUMER SECRET';
+$user_token = 'YOUR ACCESS TOKEN';
+$user_secret = 'YOUR ACCESS TOKEN SECRET';
+?&gt;
+</pre>
+<p>Replace the text, “YOUR CONSUMER KEY” etc. with the data you get for these keys from your Twitter application and save the file as <code>app_tokens.php</code>.</p>
+<h2>The PHP</h2>
+<p>Now let’s create the proxy! This is a PHP program that will take requests from your JavaScript code, create an authenticated request to send to Twitter, process the results, and pass them back to your JavaScript. Here’s the PHP:</p>
+<pre>&lt;?php
+require 'app_tokens.php';
+require 'tmhOAuth-master/tmhOAuth.php';
+$query = htmlspecialchars($_GET['query']);
+if (empty($query)) {
+    $query = "html5";
+}
+$connection = new tmhOAuth(array(
+    'consumer_key' =&gt; $consumer_key,
+    'consumer_secret' =&gt; $consumer_secret,
+    'user_token' =&gt; $user_token,
+    'user_secret' =&gt; $user_secret
+));
+// Get the timeline with the Twitter API
+$http_code = $connection-&gt;request('GET',
+    $connection-&gt;url('1.1/search/tweets'),
+    array('q' =&gt; $query, 'count' =&gt; 10, 'lang' =&gt; 'en'));
+// Request was successful
+if ($http_code == 200) {
+    // Extract the tweets from the API response
+    $response = json_decode($connection-&gt;response['response'],true);
+    $tweet_data = $response['statuses'];
+
+    // Accumulate tweets from results
+    $tweet_stream = '[';
+    foreach ($tweet_data as $tweet) {
+        // Add this tweet's text to the results
+        $tweet_stream .= ' { "tweet": ' . json_encode($tweet['text']) . ' },';
+    }
+    $tweet_stream = substr($tweet_stream, 0, -1);
+    $tweet_stream .= ']';
+    // Send the tweets back to the Ajax request
+    print $tweet_stream;
+}
+// Handle errors from API request
+else {
+    if ($http_code == 429) {
+        print 'Error: Twitter API rate limit reached';
+    }
+    else {
+        print 'Error: Twitter was not able to process that request';
+    }
+} 
+?&gt;
+</pre>
+<p>Save the file as <code>search.php</code>. Notice that I’m linking to the tmhOAuth library by requiring <code>tmhOAuth-master/tmhOAuth.php</code> which means the <code>tmhOAuth-master</code> folder must be at the same level as <code>search.php</code>. I’m also linking to <code>app_tokens.php</code>, so again, this file should be at the same level as <code>search.php</code>.</p>
+<p>So, what this code does is to create a request for Twitter using the secret keys you added to <code>app_tokens.php</code>, and then makes the request to the Twitter REST API (version 1.1). We’re using the <a href="https://dev.twitter.com/docs/api/1.1/get/search/tweets">search API</a>, but there are <a href="https://dev.twitter.com/docs/api/1.1">many other types of requests</a> you can make too, like to get a user’s timeline or the Twitter home timeline, and many more.</p>
+<p>We’re accepting a “query” parameter in the URL (and you’ll see how we can pass that to the PHP script from our JavaScript shortly), which acts as the search query. This also gets sent as part of the request to Twitter, so the tweets you get back will match that search query. We’re requesting 10 tweets, but you can request more if you want (although there is a limit, so don’t request too many).</p>
+<p>If the request is successful, then the status returned from the request will be 200 (that means everything is okay), so we can extract the tweets from the response. Twitter sends copious information about all the tweets (you can see an <a href="https://dev.twitter.com/docs/api/1.1/get/search/tweets">example response here</a>), so for this example we’re just pulling out the tweet text and ignoring the rest of the data. We’re putting all the tweets into a JSON array, and “printing” this array which sends the data back to your JavaScript code.</p>
+<p>You can test this PHP script from the command line: bring up a terminal window, and navigate to the directory where your <code>search.php</code> script is located, and type:</p>
+<pre>php search.php
+</pre>
+<p>If it’s working correctly, you’ll see the results of a search for “html5” displayed in the terminal window. If you’ve made an error in the code you’ll see the error message and hopefully you can fix it.</p>
+<h2>The JavaScript</h2>
+<p>Finally! It’s time to write your JavaScript code and make a web page. We’ll keep the web page super simple:</p>
+<pre>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Twitter&lt;/title&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;script&gt;
+// Your JavaScript code will go here
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form&gt;
+    Query: &lt;input type="text" id="query"&gt;
+    &lt;input type="button" id="submit" value="Get Tweets"&gt;
+&lt;/form&gt;
+&lt;div id="error"&gt;&lt;/div&gt;
+&lt;ul&gt;&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>Save this HTML as <code>search.html</code> in the same directory and at the same level as <code>search.php</code>. This web page simply has a form input where you can input the search term you want to use, and an empty “error” &lt;div&gt; in case we get an error (so we can display an error message), and an empty list where we’ll add the tweets if everything goes well.</p>
+<p>Now, let’s add the JavaScript:</p>
+<pre>window.onload = function() {
+    // set up the click handler for the form button
+    var button = document.getElementById("submit");
+    button.onclick = getTweets;
+}
+
+// when you click "Get Tweets" we call this function
+function getTweets() {
+    // set up a new XHR request
+    var xhr = new XMLHttpRequest();
+    // we're calling search.php and passing in a query string
+    var url = "search.php?query=";
+    var query = document.getElementById("query").value;
+    if (!query) {
+        query = "html5";
+    }
+    // we encode the query to handle any special characters properly
+    url += encodeURIComponent(query);
+
+    // this is the function that is called when the XHR request
+    // to our search.php script is handled, and a response sent back
+    xhr.onload = function() {
+        // if everything went okay, then send the response data
+        // to the displayTweets() function
+        if (xhr.status == 200) {
+            displayTweets(xhr.responseText);
+        } else {
+            var errorDiv = document.getElementById("error");
+            errorDiv.innerHTML = "Error getting tweets: " + xhr.status;
+        }
+    };
+    // make the request!
+    xhr.open("GET", url);
+    xhr.send(null);
+}
+
+function displayTweets(tweets) {
+    // tweets is a big long string, so we need to parse it 
+    // into JSON first
+    tweets = JSON.parse(tweets);
+    var ul = document.querySelector("ul");
+    // clear existing tweets from list
+    while (ul.hasChildNodes()) {
+        ul.removeChild(ul.lastChild);
+    }
+    // add new tweets
+    for (var i = 0; i &lt; tweets.length; i++) {
+        var li = document.createElement("li");
+        li.innerHTML = tweets[i].tweet;
+        ul.appendChild(li);
+    }
+}
+</pre>
+<p>Make sure you add this JavaScript into the &lt;script&gt; element at the top of the <code>search.html</code> HTML file you just created.</p>
+<p>When you enter a search term into the form and click the “Get Tweets” button, the <code>getTweets()</code> function is called. This function sets up the URL for the XHR request, and also sets up the XHR object with a callback function. We’re getting the search query from the form, and adding it to the URL for the XHR request. We send the request and if all goes okay, we call the <code>displayTweets()</code> function, passing in the response text from the XHR request.</p>
+<p>In <code>displayTweets()</code> we first call the <code>JSON.parse()</code> method to parse the <code>tweets</code> string (this string is stringified JSON data), so we have to parse it to get the object from the JSON). Then we can loop through all the tweets in the array, and get each tweet from the array. If you want to see what the tweets data looks like, just add the line:</p>
+<pre>console.log(tweets);
+</pre>
+<p>below where we call <code>JSON.parse()</code>.</p>
+<p>And for each tweet, we simply create a new &lt;li&gt; element, add the tweet text as its content, and append it to the &lt;ul&gt; element in the page.</p>
+<p>Here’s what you should see (with different tweets of course):</p>
+<p><a href="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/TwitterOAuth.jpg"><img class="aligncenter size-full wp-image-1976" style="box-shadow: 3px 3px 5px #afafaf;" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/TwitterOAuth.jpg" alt="Twitter application" width="600"></a></p>
+<p>That’s it! Clearly, this is much more complex than our original code to use JSONP to request tweets directly from Twitter via JavaScript, but with the new API in effect, there’s just no way around it. If you want to use this script to update the example in Chapter 7, you add the JavaScript code to make the request to <code>search.php</code> to <code>tweetshirt.js</code>, change the call to <code>displayTweets()</code> to <code>updateTweets()</code> and modify the <code>updateTweets()</code> function so you parse the JSON in <code>tweets</code> before processing it. You’ll also need to remove the JSONP script at the bottom of <code>index.html</code> (since that request no longer works).</p>
+<h2>For more information</h2>
+<p>If you haven’t already, check out Chapter 6 of <a href="http://www.amazon.com/exec/obidos/ASIN/1449390544/elisabethrobs-20">Head First HTML5 Programming</a> which explains in detail how XHR works. In that chapter we talk about the security requirement that your JavaScript must make a request to a server script that’s running on the <em>same server</em>. As you’ve seen, in this example, that’s exactly what we’re doing! Your PHP script is the server script, and you’re making a request to it from your JavaScript. It’s the PHP script that makes the request to Twitter, and this PHP script doesn’t have the same security requirement as your JavaScript does, so the request works.</p>
+<p>I based the code for this example on the <a href="http://140dev.com/member/">sample code</a> by Adam Green (with a few modifications). Adam also has two <em>free</em> eBooks available that describe how to use tmhOAuth, and shows additional examples of how to use the API, and how to write jQuery code to use the PHP scripts.</p>
+<span class="et_bloom_bottom_trigger"></span>					</div> <!-- .entry-content -->
+					<div class="et_post_meta_wrapper">
+					<!-- You can start editing here. -->
+
+<section id="comment-wrap">
+	<h1 id="comments" class="page_title">8 Comments</h1>
+			
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-444">
+		<article id="comment-444" class="comment-body clearfix">
+			<div class="comment_avatar">
+				<img alt="AJ Speller" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/194c89d12c319b6a3aab15186fac5b39.jpeg" srcset="https://secure.gravatar.com/avatar/194c89d12c319b6a3aab15186fac5b39?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">			</div>
+
+			<div class="comment_postinfo">
+				<span class="fn">AJ Speller</span>				<span class="comment_date">
+				on April 3, 2013 at 3:55 am				</span>
+										</div> <!-- .comment_postinfo -->
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Nice addendum to the information in HTML5 Programming.</p>
+				</div> <!-- end comment-content-->
+			</div> <!-- end comment_area-->
+		</article> <!-- .comment-body -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-445">
+		<article id="comment-445" class="comment-body clearfix">
+			<div class="comment_avatar">
+				<img alt="Eric Freeman" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/none.png" srcset="https://secure.gravatar.com/avatar/?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo avatar-default" height="80" width="80">			</div>
+
+			<div class="comment_postinfo">
+				<span class="fn"><a href="http://www.facebook.com/erictfree" rel="external nofollow" class="url">Eric Freeman</a></span>				<span class="comment_date">
+				on April 3, 2013 at 4:38 am				</span>
+										</div> <!-- .comment_postinfo -->
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Thanks AJ, this is a ugly one for us book writers…</p>
+				</div> <!-- end comment-content-->
+			</div> <!-- end comment_area-->
+		</article> <!-- .comment-body -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-446">
+		<article id="comment-446" class="comment-body clearfix">
+			<div class="comment_avatar">
+				<img alt="Katish" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/f8436d6a18395a5dcfb52ea77d63f685.png" srcset="https://secure.gravatar.com/avatar/f8436d6a18395a5dcfb52ea77d63f685?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">			</div>
+
+			<div class="comment_postinfo">
+				<span class="fn">Katish</span>				<span class="comment_date">
+				on April 8, 2013 at 9:30 pm				</span>
+										</div> <!-- .comment_postinfo -->
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>I am unable to connect to twiiter via search.php. I am using wamp server and have lan proxies to connect over internet.. When I echoed the $http_code in the seach.php file it is echoing the value as 0. Please help me to fix the problem.</p>
+				</div> <!-- end comment-content-->
+			</div> <!-- end comment_area-->
+		</article> <!-- .comment-body -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-447">
+		<article id="comment-447" class="comment-body clearfix">
+			<div class="comment_avatar">
+				<img alt="Maverick" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/3eed875c1ab639a49a61c298a64ac615.png" srcset="https://secure.gravatar.com/avatar/3eed875c1ab639a49a61c298a64ac615?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">			</div>
+
+			<div class="comment_postinfo">
+				<span class="fn">Maverick</span>				<span class="comment_date">
+				on April 19, 2013 at 2:13 pm				</span>
+										</div> <!-- .comment_postinfo -->
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Thanks for the update</p>
+				</div> <!-- end comment-content-->
+			</div> <!-- end comment_area-->
+		</article> <!-- .comment-body -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-449">
+		<article id="comment-449" class="comment-body clearfix">
+			<div class="comment_avatar">
+				<img alt="NothingComestoMind" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/8956ccff6166b3c436145897e69d126b.png" srcset="https://secure.gravatar.com/avatar/8956ccff6166b3c436145897e69d126b?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">			</div>
+
+			<div class="comment_postinfo">
+				<span class="fn">NothingComestoMind</span>				<span class="comment_date">
+				on July 23, 2013 at 6:29 am				</span>
+										</div> <!-- .comment_postinfo -->
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Aj Aj Ajey… Hey yavrum hey….</p>
+				</div> <!-- end comment-content-->
+			</div> <!-- end comment_area-->
+		</article> <!-- .comment-body -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-450">
+		<article id="comment-450" class="comment-body clearfix">
+			<div class="comment_avatar">
+				<img alt="Vursana Lan" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/8ab3b6e0bc5a8f79a7ceb342f5f4059e.png" srcset="https://secure.gravatar.com/avatar/8ab3b6e0bc5a8f79a7ceb342f5f4059e?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">			</div>
+
+			<div class="comment_postinfo">
+				<span class="fn">Vursana Lan</span>				<span class="comment_date">
+				on September 3, 2013 at 8:24 am				</span>
+										</div> <!-- .comment_postinfo -->
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>AJ.. AJ.. AJEY.. Hey Yavrum Hey..</p>
+				</div> <!-- end comment-content-->
+			</div> <!-- end comment_area-->
+		</article> <!-- .comment-body -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-451">
+		<article id="comment-451" class="comment-body clearfix">
+			<div class="comment_avatar">
+				<img alt="amrapali" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/4ace7ac515983943f773309b65a3e0cd.png" srcset="https://secure.gravatar.com/avatar/4ace7ac515983943f773309b65a3e0cd?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">			</div>
+
+			<div class="comment_postinfo">
+				<span class="fn">amrapali</span>				<span class="comment_date">
+				on September 5, 2013 at 7:31 am				</span>
+										</div> <!-- .comment_postinfo -->
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>my php search.php is working but giving ” PHP Notice:  Undefined index: query in /var/www/tweeter/search.php on line 4<br>
+”  But tweets are not comming it is giving error .<br>
+Error getting tweets: 500</p>
+<p>please help</p>
+				</div> <!-- end comment-content-->
+			</div> <!-- end comment_area-->
+		</article> <!-- .comment-body -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-452">
+		<article id="comment-452" class="comment-body clearfix">
+			<div class="comment_avatar">
+				<img alt="Eric Leary" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/e2708980a50028b6814d9f95d2dc2ec5.jpeg" srcset="https://secure.gravatar.com/avatar/e2708980a50028b6814d9f95d2dc2ec5?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80">			</div>
+
+			<div class="comment_postinfo">
+				<span class="fn">Eric Leary</span>				<span class="comment_date">
+				on December 29, 2013 at 6:44 pm				</span>
+										</div> <!-- .comment_postinfo -->
+
+			<div class="comment_area">
+				
+				<div class="comment-content clearfix">
+				<p>Thanks, I am seeing some daylight now.  I experimented with replacing Twitter with Google Docs Spreadsheet as a way to get text into my canvas via json, but got lost in the weeds there too.  I think I will return to that approach once I get more skilled. That seems like a good stack for proto typing new json api applications, and might be more headfirst friendly.</p>
+				</div> <!-- end comment-content-->
+			</div> <!-- end comment_area-->
+		</article> <!-- .comment-body -->
+</li><!-- #comment-## -->
+			</ol>
+		
+		
+					<div id="trackbacks">
+				<h3 id="trackbacks-title">Trackbacks/Pingbacks</h3>
+				<ol class="pinglist">
+						<li id="comment-448"><a href="https://www.wickedlysmart.com/wickedlysmart/twitternews/" rel="external nofollow" class="url">Twitter API: Accessing timeline data | Wickedly Smart</a> - [...] Update: Twitter has completed the deprecation process for API version 1, so the temporary URL above will no longer…</li><!-- #comment-## -->
+				</ol>
+			</div>
+				
+	</section>					</div> <!-- .et_post_meta_wrapper -->
+				</article> <!-- .et_pb_post -->
+
+						</div> <!-- #left-area -->
+
+					</div> <!-- #content-area -->
+	</div> <!-- .container -->
+	</div> <!-- #main-content -->
+
+
+			<footer id="main-footer">
+				
+
+		
+				<div id="footer-bottom">
+					<div class="container clearfix">
+				<div id="footer-info">© 2004-2020 WickedlySmart, LLC. All Rights Reserved.</div>					</div>	<!-- .container -->
+				</div>
+			</footer> <!-- #main-footer -->
+		</div> <!-- #et-main-area -->
+
+
+	</div> <!-- #page-container -->
+
+	<div class="et_bloom_flyin et_bloom_optin et_bloom_resize et_bloom_flyin_right et_bloom_optin_6 et_bloom_auto_popup et_bloom_trigger_click" data-delay="15" data-cookie_duration="3" data-trigger_click="a#support-trigger">
+							<div class="et_bloom_form_container et_bloom_form_bottom et_bloom_rounded et_bloom_form_text_dark et_bloom_animation_slideup et_flyin_1_field et_bloom_flyin_bottom_inline" style="max-height: 620px;">
+								
+			<div class="et_bloom_form_container_wrapper clearfix" style="max-height: 600px;">
+				<div class="et_bloom_header_outer">
+					<div class="et_bloom_form_header split et_bloom_header_text_light">
+						<img width="600" height="753" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/couple_with_book_html5.jpg" class=" et_bloom_image_no_animation et_bloom_image" alt="" srcset="https://www.wickedlysmart.com/wp-content/uploads/2018/08/couple_with_book_html5.jpg 600w, https://www.wickedlysmart.com/wp-content/uploads/2018/08/couple_with_book_html5-239x300.jpg 239w" sizes="(max-width: 600px) 100vw, 600px">
+						<div class="et_bloom_form_text">
+						<h2>Don't miss out!</h2><p>Don't miss out on brain-friendly WickedlySmart updates early access to books and general cool stuff! Just give us your email and we'll send you something about once a week.&nbsp;</p>
+					</div>
+						
+					</div>
+				</div>
+				<div class="et_bloom_form_content et_bloom_1_field et_bloom_bottom_inline">
+					
+					
+					<form method="post" class="clearfix">
+						<div class="et_bloom_fields">
+							
+							<p class="et_bloom_popup_input et_bloom_subscribe_email">
+								<input placeholder="Email">
+							</p>
+							
+							<button data-optin_id="optin_6" data-service="sendinblue" data-list_id="2" data-page_id="1969" data-account="Eric" data-disable_dbl_optin="" data-ip_address="false" class="et_bloom_submit_subscription">
+								<span class="et_bloom_subscribe_loader"></span>
+								<span class="et_bloom_button_text et_bloom_button_text_color_light">SUBSCRIBE!</span>
+							</button>
+						</div>
+					</form>
+					<div class="et_bloom_success_container">
+						<span class="et_bloom_success_checkmark"></span>
+					</div>
+					<h2 class="et_bloom_success_message">You have Successfully Subscribed!</h2>
+					<div class="et_bloom_form_footer"><p>Remove yourself at any time. Visit our <a href="https://wickedlysmart.com/privacy-policy/">Privacy Policy</a></p></div>
+				</div>
+			</div>
+			<span class="et_bloom_close_button"></span>
+							</div>
+						</div>	<script type="text/javascript">
+			</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-35390231-1');
+</script>
+<link rel="stylesheet" id="et-gf-oswald-css" href="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/css(1)" type="text/css" media="all">
+<link rel="stylesheet" id="et-gf-open-sans-css" href="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/css(2)" type="text/css" media="all">
+<link rel="stylesheet" id="et_bloom-css-css" href="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/style(1).css" type="text/css" media="all">
+<script type="text/javascript" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/effect.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.wickedlysmart.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.wickedlysmart.com\/wp-content\/themes\/Divi-2\/images","builder_images_uri":"https:\/\/www.wickedlysmart.com\/wp-content\/themes\/Divi-2\/includes\/builder\/images","et_frontend_nonce":"4d55c7b2a9","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"c5910e2aa7","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","is_ab_testing_active":"","page_id":"1969","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":""};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/custom.min.js"></script>
+<script type="text/javascript" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/frontend-bundle.min.js"></script>
+<script type="text/javascript" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/common.js"></script>
+<script type="text/javascript" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/wp-embed.min.js"></script>
+<script type="text/javascript" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/jquery.uniform.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var bloomSettings = {"ajaxurl":"https:\/\/www.wickedlysmart.com\/wp-admin\/admin-ajax.php","pageurl":"https:\/\/www.wickedlysmart.com\/twitternews-oauth\/","stats_nonce":"88ae0283da","subscribe_nonce":"0fa9dfba25","is_user_logged_in":"not_logged"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/custom.js"></script>
+<script type="text/javascript" src="./Twitter API_ Using OAuth to access Twitter _ WickedlySmart.com_files/idle-timer.min.js"></script>
+
+
+
+<!-- Dynamic page generated in 1.040 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2020-09-03 08:09:34 -->
+
+<!-- super cache --></body></html>
